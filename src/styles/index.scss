@@ -1,6 +1,32 @@
+@charset 'utf-8';
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import 'globals';
+@import 'example1.scss';
+@import 'example2.scss';
 
+// use rem for font-size
+// pixels for borders and layout spacing
+// em for media queries
 body {
   background-color: $favColor !important;
+  font-family: $favFont !important;
+  background: url("https://s3-alpha-sig.figma.com/img/e22e/bbb0/16512087a6991cd80053af88b671fb35?Expires=1646006400&Signature=VYd6FqliTGAjQsI9E2iml6-Kink99qFGo6mAo3a9NF7DxSvzH95hyN5MurV9-2~u-I-afF~nXtcONrCS-QKurOFdD7w0DQwm6zbBU4E3pllRdA~-ER4xmUS-W6lGRlrG~g7jL3oZR3BDGCMOr~xLPd15xXEa6bG27vkTBaKF3QgyKLvFCbjPUKyu6iFFG1xUgJJhRCaREh2iG2zkYOnF4DWmf~v~IOZxRt0XvbyFKiyYnvGC3EajMktCtQ7iAY27xgDwi1IGuopulTxTqQt5n93axHg6VN99jN3IXj7lO57o8EOrg4VsSyuTLrdv0IUC6yxaUAUb8RBPugd-jCOi3A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+}
+
+.Nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  background-color: $favColor;
+
+  .link1, .link2 {
+    margin: 16px;
+  }
 }

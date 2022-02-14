@@ -1,0 +1,236 @@
+@charset 'utf-8';
+
+.example-2 {
+  color: white;
+  padding: 69px 62px;
+  // height: 100vh;
+  width: 60%;
+  justify-content: center;
+  margin: 0px auto;
+  white-space: nowrap;
+}
+
+.title-2 {
+  font-weight: 300;
+  margin: 0;
+  font-size: $headline-1-rem;
+
+  @media only screen and (#{$laptop}) {
+    font-size: $headline-1-rem / $scale;
+  }
+  @media only screen and (#{$tablet}) {
+    font-size: calc($headline-1-rem / $scale / $scale);
+  }
+  @media only screen and (#{$phone}) {
+    font-size: calc($headline-1-rem / $scale / $scale / $scale);
+  }
+}
+
+.title-bar {
+  height: 6px;
+  width: auto;
+  background-color: white;
+}
+
+.typography-rem {
+  padding: 20px;
+  border: 1px dotted white;
+
+  .rem-font {
+    padding: 24px;
+    // border: 1px dotted white;
+  }
+
+  .headline-1 {
+    font-size: $headline-1-rem;
+
+    @media only screen and (#{$laptop}) {
+      font-size: $headline-1-rem / $scale;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: calc($headline-1-rem / $scale / $scale);
+    }
+    @media only screen and (#{$phone}) {
+      font-size: calc($headline-1-rem / $scale / $scale / $scale);
+    }
+  }
+
+  .headline-2 {
+    font-size: $headline-2-rem;
+
+    @media only screen and (#{$laptop}) {
+      font-size: $headline-2-rem / $scale;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: calc($headline-2-rem / $scale / $scale);
+    }
+    @media only screen and (#{$phone}) {
+      font-size: calc($headline-2-rem / $scale / $scale / $scale);
+    }
+  }
+
+  .subhead-1 {
+    font-size: $subhead-1-rem;
+
+    @media only screen and (#{$laptop}) {
+      font-size: $subhead-1-rem / $scale;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: calc($subhead-1-rem / $scale / $scale);
+    }
+    @media only screen and (#{$phone}) {
+      font-size: calc($subhead-1-rem / $scale / $scale / $scale);
+    }
+  }
+
+  .app-button {
+    font-size: $app-button-rem;
+
+    @media only screen and (#{$laptop}) {
+      font-size: $app-button-rem / $scale;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: calc($app-button-rem / $scale / $scale);
+    }
+    @media only screen and (#{$phone}) {
+      font-size: calc($app-button-rem / $scale / $scale / $scale);
+    }
+  }
+  .tile-label {
+    font-size: $tile-label-rem;
+
+    @media only screen and (#{$laptop}) {
+      font-size: $tile-label-rem / $scale;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: calc($tile-label-rem / $scale / $scale);
+    }
+    @media only screen and (#{$phone}) {
+      font-size: calc($tile-label-rem / $scale / $scale / $scale);
+    }
+  }
+
+  .app-body {
+    font-size: $app-body-rem;
+  
+    @media only screen and (#{$laptop}) {
+      font-size: $app-body-rem / $scale;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: calc($app-body-rem / $scale / $scale);
+    }
+    @media only screen and (#{$phone}) {
+      font-size: calc($app-body-rem / $scale / $scale / $scale);
+    }
+  }
+}
+
+.typography-px {
+  padding: 20px;
+  border: 1px dotted white;
+
+  .px-font {
+    padding: 24px;
+    // border: 1px dotted white;
+  }
+
+  .headline-1 {
+    font-size: $headline-1-px;
+
+    @media only screen and (#{$laptop}) {
+      font-size: 39.81px;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: 33.18px;
+    }
+    @media only screen and (#{$phone}) {
+      font-size: 27.65px;
+    }
+  }
+
+  .headline-2 {
+    font-size: $headline-2-px;
+
+    @media only screen and (#{$laptop}) {
+      font-size: 33.18px;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: 27.65px;
+    }
+    @media only screen and (#{$phone}) {
+      font-size: 23.04px;
+    }
+  }
+
+  .subhead-1 {
+    font-size: $subhead-1-px;
+
+    @media only screen and (#{$laptop}) {
+      font-size: 27.65px;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: 23.04px;
+    }
+    @media only screen and (#{$phone}) {
+      font-size: 19.20px;
+    }
+  }
+
+  .app-button {
+    font-size: $app-button-px;
+
+    @media only screen and (#{$laptop}) {
+      font-size: 23.04px;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: 19.20px;
+    }
+    @media only screen and (#{$phone}) {
+      font-size: 16px;
+    }
+  }
+  .tile-label {
+    font-size: $tile-label-px;
+
+    @media only screen and (#{$laptop}) {
+      font-size: 19.20px;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: 16px;
+    }
+    @media only screen and (#{$phone}) {
+      font-size: 13.33px;
+    }
+  }
+
+  .app-body {
+    font-size: $app-body-px;
+  
+    @media only screen and (#{$laptop}) {
+      font-size: 16px;
+    }
+    @media only screen and (#{$tablet}) {
+      font-size: 13.33px;
+    }
+    @media only screen and (#{$phone}) {
+      font-size: 11.11px;
+    }
+  }
+}
+
+.typography-vw {
+  padding: 20px;
+  border: 1px dotted white;
+
+  .vw-font {
+    padding: 24px;
+    // border: 1px dotted white;
+  }
+
+  .headline-1 {font-size: $headline-1-vw;}
+  .headline-2 {font-size: $headline-1-vw / $scale;}
+  .subhead-1 {font-size: $headline-1-vw / $scale / $scale;}
+  .app-button {font-size: $headline-1-vw / $scale / $scale / $scale;}
+  .tile-label {font-size: $headline-1-vw / $scale / $scale / $scale / $scale;}
+  .app-body {font-size: $headline-1-vw / $scale / $scale / $scale / $scale / $scale;}
+}

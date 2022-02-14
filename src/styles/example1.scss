@@ -1,0 +1,104 @@
+@charset 'utf-8';
+
+.example-1 {
+  color: white;
+  padding: 69px 62px;
+  height: 100vh;
+  justify-content: center;
+  margin: 0px auto;
+  white-space: nowrap;
+}
+
+.title-1 {
+  font-weight: 300;
+  margin: 0;
+  margin-left: -2.5rem;
+  margin-top: 3.063rem;
+  font-size: $headline-1-rem;
+}
+
+.title-bar {
+  height: 6.875rem;
+  width: auto;
+  background-color: white;
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(100, 134, 151, 0.4) 0%, rgba(100, 134, 151, 0.08) 105.6%);
+  box-shadow: 0px 1px 12px -1px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(80px);
+  margin: 48px auto;
+  width: 90%;
+}
+
+.buttons-1 {
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  padding: 48px;
+  // border: 1px dotted white;
+}
+
+.on-button {
+  height: 12.375em;
+  width: 12.375em;
+  border-radius: 12px !important;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  white-space: normal;
+  word-wrap: break-word; 
+  overflow: hidden;
+
+  .button-title {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 1em;
+  }
+
+  .button-status {
+    width: 100%;
+    text-align: right;
+    padding-top: 1em;
+  }
+
+  // @media only screen and (#{$laptop})  {
+  //   height: 12.375em;
+  //   width: 12.375em;
+  // }
+}
+
+.off-button {
+  height: 12.375em;
+  width: 12.375em;
+  border-radius: 12px !important;
+  padding: 12px;
+  border: 1px solid white;
+  color: white !important;
+  white-space: normal;
+  word-wrap: break-word; 
+  overflow: hidden;
+  background-color: transparent !important;
+
+  .button-title {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 1em;
+  }
+
+  .button-status {
+    width: 100%;
+    text-align: right;
+    padding-top: 1em;
+  }
+
+  // @media only screen and (#{$phone})  {
+  //   max-width: 80px;
+  //   max-height: 80px
+  // }
+}
